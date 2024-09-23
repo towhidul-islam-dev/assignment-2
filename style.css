@@ -220,21 +220,20 @@ text-transform: capitalize;
   }
   .bars{
     display: none;
+    border: 2px solid orange;
   }
   .nav{
     display: flex;
- align-items: center;
- justify-content: space-between;
- /*gap: 1rem;
- */border: 1px solid var(--secondary-color);
- padding: 0.25rem;
- -webkit-border-radius:2rem ;
- -moz-border-radius:2rem ;
- -ms-border-radius:2rem ;
- -o-border-radius:2rem ;
- border-radius:2rem ;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--secondary-color);
+    padding: 0.25rem;
+    -webkit-border-radius:2rem ;
+    -moz-border-radius:2rem ;
+    -ms-border-radius:2rem ;
+    -o-border-radius:2rem ;
+    border-radius:2rem ;
   }
- 
   .hero-title{
     font-size: 4.875rem;
     font-weight: 900;
@@ -258,6 +257,8 @@ text-transform: capitalize;
     display: flex;
     gap: 4rem;
   }
-  
+  .bars{
+    display: none;
+  }
 }                                                                                                                                                                                                                                                                                                                                                                                                                               3
 /* Media Query */
