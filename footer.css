@@ -1,0 +1,120 @@
+.footer-container {
+  background: linear-gradient(180deg, #111111 100%, #777777 0%);
+  padding-inline: 1.25rem;
+}
+.footer-links-wapper {
+  max-width: 1060px;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.footer-title {
+  font-size: 4.375rem;
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: 800;
+}
+.footer-sub-title {
+  padding-block: 1.5rem;
+  max-width: 50ch;
+}
+.footer-contact-title {
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+/* .footer-container > div {
+  display: flex;
+  gap: 4rem;
+} */
+
+.footer-links-wapper > div > ul > li > a {
+  color: var(--secondary-text-color);
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footer-links-wapper > div > ul > li {
+  padding-bottom: 1rem;
+  list-style: none;
+}
+.footer-right {
+  border-top: 2px solid var(--secondary-color);
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+  max-width: 1060px;
+  width: 100%;
+  /* text-align: center; */
+}
+.footer-right > p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    padding-inline: 1.8rem;
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-links-wapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-heading-container {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer-link-1 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer-link-2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer-container {
+    display: grid;
+    place-items: center;
+  }
+  .links-container {
+    display: flex;
+    /* max-width: 1060px; */
+  }
+  .footer-links-wapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .footer-heading-container {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .footer-link-1 {
+    grid-row-start: 1;
+
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  .footer-link-2 {
+    grid-row-start: 1;
+
+    grid-column-start: 7;
+    grid-column-end: 9;
+  }
+  .footer-link-1,
+  .footer-link-2 {
+    display: block;
+  }
+}
