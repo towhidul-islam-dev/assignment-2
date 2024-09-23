@@ -254,5 +254,6 @@ text-transform: capitalize;
     display: flex;
     gap: 4rem;
   }
+  .fa-bars{display: none;}
 }                                                                                                                                                                                                                                                                                                                                                                                                                               3
 /* Media Query */
