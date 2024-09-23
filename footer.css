@@ -95,6 +95,7 @@
   }
   .footer-links-wapper {
     grid-template-columns: repeat(8, 1fr);
+    padding-top: 2rem;
   }
   .footer-heading-container {
     grid-row-start: 1;
