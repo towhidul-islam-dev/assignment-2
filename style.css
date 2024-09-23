@@ -60,8 +60,8 @@ color: var(--secondary-text-color);
 }
 nav {
   padding-block: 3.25rem;
-  width: calc(100% - 2.25rem);
   max-width: 1060px;
+  width: calc(100% - 2.25rem);
 }
 .nav{
  list-style: none;
@@ -95,8 +95,6 @@ nav {
 .fa-bars {
   font-size: 1.5rem;
   color: var(--primary-text-color);
-
-  display: block;
 }
 .fa-bars::before{
   content: none;
@@ -211,6 +209,12 @@ text-transform: capitalize;
   font-weight: bold;
   
 }
+/* .mobile-nav{
+  display: block;
+} */
+.desktop-nav{
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .title-style{
     font-size: 2.25rem;
@@ -218,22 +222,19 @@ text-transform: capitalize;
   .header-section{
     padding-inline: 1.8rem          ;
   }
-  .bars{
-    display: none;
-    border: 2px solid orange;
-  }
+
   .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid var(--secondary-color);
     padding: 0.25rem;
-    -webkit-border-radius:2rem ;
-    -moz-border-radius:2rem ;
-    -ms-border-radius:2rem ;
-    -o-border-radius:2rem ;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
     border-radius:2rem ;
-  }
+}
   .hero-title{
     font-size: 4.875rem;
     font-weight: 900;
@@ -243,6 +244,12 @@ text-transform: capitalize;
     place-items: center;
     padding-inline: 4.5rem;
     row-gap: 3rem;
+  }
+  .mobile-nav{
+    display: none;
+  }
+  .desktop-nav{
+    display: flex;
   }
 }
 .feature-2-content > p{
@@ -257,8 +264,6 @@ text-transform: capitalize;
     display: flex;
     gap: 4rem;
   }
-  .bars{
-    display: none;
-  }
+  
 }                                                                                                                                                                                                                                                                                                                                                                                                                               3
 /* Media Query */
