@@ -98,6 +98,9 @@ nav {
 
   display: block;
 }
+.fa-bars::before{
+  content: none;
+}
 .main-container {
   padding-inline: 1.25rem;
   max-width: 1060px;
@@ -215,6 +218,9 @@ text-transform: capitalize;
   .header-section{
     padding-inline: 1.8rem          ;
   }
+  .bars{
+    display: none;
+  }
   .nav{
     display: flex;
  align-items: center;
@@ -228,9 +234,7 @@ text-transform: capitalize;
  -o-border-radius:2rem ;
  border-radius:2rem ;
   }
-  .fa-bars{
-    display: none;
-  }
+ 
   .hero-title{
     font-size: 4.875rem;
     font-weight: 900;
@@ -254,6 +258,6 @@ text-transform: capitalize;
     display: flex;
     gap: 4rem;
   }
-  .fa-bars{display: none;}
+  
 }                                                                                                                                                                                                                                                                                                                                                                                                                               3
 /* Media Query */
